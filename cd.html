@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+    #div1{
+        width:1000px;
+        height: 500px;
+        background:url(img/bg.jpg) no-repeat;
+        margin: 100px auto;
+        position:relative;
+
+    }
+    .box1{
+        width: 200px;
+        height:200px;
+        background:url(img/img_01.jpg) no-repeat;
+        position:absolute;
+        left:100px;
+        bottom:40px;
+        -webkit-transition:1s all ease;
+
+    }
+    .cd{
+        width:200px;
+        height:200px;
+        background: url(img/cd.png) no-repeat;
+        background-size:200px 200px;
+        position:absolute;
+        left: 100px;
+        bottom:40px;
+        -webkit-transition:1s all ease;
+        
+    }
+    .box:hover .cd{
+        -webkit-transform:translate(0px,-35px) rotate(180deg);
+        -moz-transition:translate(0px,-35px) rotate(180deg);     
+        -ms-transition:translate(0px,-35px) rotate(180deg);    
+        -o-transition:translate(0px,-35px) rotate(180deg);      
+        transition:translate(0px,-35px) rotate(180deg);         
+
+    }
+    .box:hover .box1{
+        -webkit-transform:translate(0,15px);
+        -moz-transform:translate(0,15px);
+        -ms-transform:translate(0,15px);
+        -o-transform:translate(0,15px);
+        transform:translate(0,15px);
+    }
+
+
+</style>
+<script>
+</script>
+</head>
+<body>
+    <div id="div1">
+        <div class="box">
+            <div class="cd"></div>
+            <div class="box1"></div>
+        </div>
+    </div>
+</body>
+</html>
